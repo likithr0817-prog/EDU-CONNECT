@@ -1,9 +1,9 @@
-# Edu-Connect - Learning Management System
-## College Project | PHP + MySQL + XAMPP
+#Edu-Connect - Learning Management System
+College Project | PHP + MySQL + XAMPP
 
 ---
 
-## 📁 FOLDER STRUCTURE
+ 📁 FOLDER STRUCTURE
 
 ```
 edu-connect/
@@ -55,23 +55,23 @@ edu-connect/
 
 ---
 
-## ⚙️ STEP-BY-STEP SETUP ON XAMPP
+ ⚙️ STEP-BY-STEP SETUP ON XAMPP
 
-### Step 1 — Install XAMPP
+ Step 1 — Install XAMPP
 Download from https://www.apachefriends.org and install.
 
-### Step 2 — Copy Project
+Step 2 — Copy Project
 Copy the entire `edu-connect` folder into:
 ```
 C:\xampp\htdocs\edu-connect\
 ```
 
-### Step 3 — Start XAMPP
+Step 3 — Start XAMPP
 Open XAMPP Control Panel and start:
 - ✅ Apache
 - ✅ MySQL
 
-### Step 4 — Create Database
+ Step 4 — Create Database
 1. Open your browser and go to: http://localhost/phpmyadmin
 2. Click **"New"** in the left sidebar
 3. Create a database named **`educonnect`**
@@ -80,7 +80,7 @@ Open XAMPP Control Panel and start:
 6. Click **"Choose File"** → select `data/educonnect.sql`
 7. Click **"Go"** (import button)
 
-### Step 5 — Configure Database (if needed)
+Step 5 — Configure Database (if needed)
 Open `data/db.php` and update credentials if your MySQL password is different:
 ```php
 define('DB_HOST', 'localhost');
@@ -89,7 +89,7 @@ define('DB_PASS', '');       // ← change if you have a MySQL password
 define('DB_NAME', 'educonnect');
 ```
 
-### Step 6 — Set Upload Permissions
+Step 6 — Set Upload Permissions
 Ensure the `uploads/` folder is writable. On Windows with XAMPP this is usually automatic.
 
 On Linux/Mac:
@@ -97,12 +97,11 @@ On Linux/Mac:
 chmod -R 777 uploads/
 ```
 
-### Step 7 — Open the App
+ Step 7 — Open the App
 Go to: **http://localhost/edu-connect/**
 
 ---
-
-## 🔐 DEFAULT LOGIN CREDENTIALS
+ 🔐 DEFAULT LOGIN CREDENTIALS
 
 | Role  | Email                     | Password   |
 |-------|---------------------------|------------|
@@ -112,15 +111,15 @@ Go to: **http://localhost/edu-connect/**
 
 ---
 
-## 👥 USER WORKFLOW
+ 👥 USER WORKFLOW
 
-### For Students/Teachers:
+ For Students/Teachers:
 1. Go to http://localhost/edu-connect/presentation/register.php
 2. Fill in the registration form
 3. Wait for admin to approve the account
 4. Login at http://localhost/edu-connect/presentation/login.php
 
-### For Admin:
+ For Admin:
 1. Login with admin credentials above
 2. Go to **Approvals** to approve/reject registrations
 3. Go to **Notifications** to send announcements
@@ -128,7 +127,7 @@ Go to: **http://localhost/edu-connect/**
 
 ---
 
-## 📋 DATABASE TABLES
+ 📋 DATABASE TABLES
 
 | Table               | Description                              |
 |---------------------|------------------------------------------|
@@ -143,15 +142,15 @@ Go to: **http://localhost/edu-connect/**
 
 ---
 
-## 🎨 FEATURES SUMMARY
+ 🎨 FEATURES SUMMARY
 
-### ✅ Authentication
+ ✅ Authentication
 - Role-based registration (Student/Teacher)
 - Auto-generated unique IDs (STU-000001, TEA-000001)
 - Password hashing with PHP password_hash()
 - Session-based login with role-based redirect
 
-### ✅ Admin Panel
+✅ Admin Panel
 - Approve/reject registrations
 - View all users with search
 - Monitor all uploaded materials
@@ -159,23 +158,23 @@ Go to: **http://localhost/edu-connect/**
 - Send notifications to all/students/teachers
 - Dashboard statistics
 
-### ✅ Study Materials
+✅ Study Materials
 - Upload PDFs, Videos, Images, or external links
 - MIME type + file size validation (max 50MB)
 - Files stored in /uploads/ subdirectory
 - Delete own uploads (or admin deletes any)
 
-### ✅ Notifications
+ ✅ Notifications
 - Admin sends to all, students only, or teachers only
 - Unread count shown in sidebar and topbar
 - Mark as read via AJAX
 
-### ✅ Profiles
+✅ Profiles
 - View unique ID prominently displayed
 - Edit name, age, college, contact, class/subject
 - Approval status shown on profile
 
-### ✅ Security
+ ✅ Security
 - Prepared statements (prevents SQL injection)
 - Password hashing
 - File type MIME validation
@@ -185,7 +184,7 @@ Go to: **http://localhost/edu-connect/**
 
 ---
 
-## 🛠️ TROUBLESHOOTING
+ 🛠️ TROUBLESHOOTING
 
 **"Database connection failed"**
 → Make sure MySQL is running in XAMPP
