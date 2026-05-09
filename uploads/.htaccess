@@ -1,0 +1,6 @@
+# Block direct PHP execution EXCEPT serve.php (our file server)
+<FilesMatch "^(?!serve\.php$).*\.php$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+Options -Indexes

@@ -1,0 +1,9 @@
+; Place this file in your XAMPP php/ directory (C:\xampp\php\php.ini)
+; OR activate via XAMPP > Apache > Config > PHP (php.ini)
+; Then restart Apache.
+
+; Increase upload limits (required for PDF/video uploads)
+upload_max_filesize = 64M
+post_max_size = 68M
+max_execution_time = 120
+memory_limit = 256M
