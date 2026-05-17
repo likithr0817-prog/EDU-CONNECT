@@ -26,15 +26,15 @@ renderSidebar('videos');
 renderFlash();
 ?>
 <style>
-.vid-share-form{background:var(--surf);border:1px solid var(--rim);border-radius:var(--r);overflow:hidden;margin-bottom:28px;transition:border-color var(--t)}
-.vid-share-form:focus-within{border-color:var(--rim3)}
-.vid-share-header{padding:16px 22px;border-bottom:1px solid var(--rim);background:linear-gradient(90deg,rgba(110,86,255,.1),transparent);display:flex;align-items:center;justify-content:space-between}
-.vid-share-header h3{font-family:'Outfit',sans-serif;font-size:1rem;font-weight:700;color:var(--tx)}
+.vid-share-form{background:var(--glass);border:1px solid var(--gb);border-radius:var(--r);overflow:hidden;margin-bottom:28px;transition:border-color var(--t)}
+.vid-share-form:focus-within{border-color:var(--gb3)}
+.vid-share-header{padding:16px 22px;border-bottom:1px solid var(--gb);background:linear-gradient(90deg,rgba(110,86,255,.1),transparent);display:flex;align-items:center;justify-content:space-between}
+.vid-share-header h3{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--tx)}
 .vid-share-body{padding:20px 22px}
 .vid-form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:14px}
 #ytPreviewBox{display:none;margin-bottom:16px}
 .preview-label{font-size:.7rem;font-weight:800;color:var(--c);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:6px}
-.preview-frame{max-width:300px;border-radius:12px;overflow:hidden;border:1px solid var(--rim2);box-shadow:0 0 30px rgba(110,86,255,.2)}
+.preview-frame{max-width:300px;border-radius:12px;overflow:hidden;border:1px solid var(--gb2);box-shadow:0 0 30px rgba(110,86,255,.2)}
 @media(max-width:700px){.vid-form-row{grid-template-columns:1fr}}
 </style>
 

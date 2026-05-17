@@ -53,7 +53,7 @@ renderFlash();
       <?php if($photoUrl): ?>
       <img src="<?=$photoUrl?>" alt="Profile photo"
            style="width:84px;height:84px;border-radius:20px;object-fit:cover;
-                  border:3px solid var(--rim2);box-shadow:var(--gv);margin:0 auto 14px;display:block">
+                  border:3px solid var(--gb2);box-shadow:var(--gv);margin:0 auto 14px;display:block">
       <?php else: ?>
       <div class="profile-photo" style="width:84px;height:84px;font-size:2.1rem;margin:0 auto 14px;
            background:<?=$isTeach?'linear-gradient(135deg,var(--c),#00aaaa)':'linear-gradient(135deg,var(--vb),var(--c))'?>">
@@ -62,7 +62,7 @@ renderFlash();
       <?php endif; ?>
 
       <div class="uid-badge"><?=htmlspecialchars($profile['unique_id'])?></div>
-      <h2 style="font-family:'Outfit',sans-serif;font-size:1.2rem;font-weight:800;margin:8px 0 4px">
+      <h2 style="font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;margin:8px 0 4px">
         <?=htmlspecialchars($profile['name'])?>
       </h2>
       <div style="font-size:.78rem;color:<?=$isTeach?'var(--c)':'var(--vb)'?>;font-weight:700;
@@ -70,7 +70,7 @@ renderFlash();
         <?=$isTeach?'Teacher':'Student'?>
       </div>
 
-      <div style="border-top:1px solid var(--rim);padding-top:14px;text-align:left;display:flex;flex-direction:column;gap:10px">
+      <div style="border-top:1px solid var(--gb);padding-top:14px;text-align:left;display:flex;flex-direction:column;gap:10px">
         <?php if($profile['college_name']): ?>
         <div style="display:flex;gap:10px;align-items:flex-start">
           <span>🏫</span>
@@ -116,8 +116,8 @@ renderFlash();
         </div>
       </div>
 
-      <div style="margin-top:16px;padding:12px;background:var(--vc);border-radius:var(--rsm);border:1px solid var(--rim2)">
-        <div style="font-family:'Outfit',sans-serif;font-size:1.8rem;font-weight:900;color:var(--vb)"><?=$matCount?></div>
+      <div style="margin-top:16px;padding:12px;background:var(--vc);border-radius:var(--rsm);border:1px solid var(--gb2)">
+        <div style="font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:900;color:var(--vb)"><?=$matCount?></div>
         <div style="font-size:.72rem;color:var(--tx3);font-weight:600">Materials Uploaded</div>
       </div>
 

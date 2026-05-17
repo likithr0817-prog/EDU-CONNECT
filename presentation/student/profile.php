@@ -53,7 +53,7 @@ renderFlash();
         </div>
 
         <div class="uid-badge"><?=htmlspecialchars($user['unique_id'])?></div>
-        <h3 style="font-family:'Outfit',sans-serif;font-size:1.1rem;font-weight:800;margin:8px 0 4px">
+        <h3 style="font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800;margin:8px 0 4px">
           <?=htmlspecialchars($user['name'])?>
         </h3>
         <div style="font-size:.78rem;color:var(--vb);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px">

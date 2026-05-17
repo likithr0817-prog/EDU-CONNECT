@@ -35,11 +35,11 @@ renderFlash();
 </div>
 
 <!-- STAT BANNER -->
-<div style="display:grid;grid-template-columns:auto 1fr;gap:24px;background:var(--surf);border:1px solid var(--rim);
+<div style="display:grid;grid-template-columns:auto 1fr;gap:24px;background:var(--glass);border:1px solid var(--gb);
             border-radius:var(--r);padding:28px;margin-bottom:28px;align-items:center;animation:scaleIn .4s var(--spring)">
   <!-- Big rating -->
-  <div style="text-align:center;padding-right:24px;border-right:1px solid var(--rim)">
-    <div style="font-family:'Outfit',sans-serif;font-size:4.5rem;font-weight:900;line-height:1;
+  <div style="text-align:center;padding-right:24px;border-right:1px solid var(--gb)">
+    <div style="font-family:'Syne',sans-serif;font-size:4.5rem;font-weight:900;line-height:1;
                 background:linear-gradient(135deg,var(--am),#ff8800);
                 -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
       <?=$avgR ?: '—'?>
@@ -110,7 +110,7 @@ renderFlash();
 
         <?php if ($mine): ?>
         <div style="font-size:.76rem;color:var(--tx3);margin-bottom:14px;padding:10px 12px;
-                    background:var(--vc);border-radius:var(--rsm);border:1px solid var(--rim2)">
+                    background:var(--vc);border-radius:var(--rsm);border:1px solid var(--gb2)">
           ✓ You submitted this <?=date('d M Y',strtotime($mine['created_at']))?>
         </div>
         <?php endif; ?>

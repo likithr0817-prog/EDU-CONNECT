@@ -52,7 +52,7 @@ renderFlash();
                onchange="fileSelected(this)">
         <!-- File preview info -->
         <div id="fileInfo" style="display:none;margin-top:10px;padding:10px 14px;
-             background:var(--vc);border:1px solid var(--rim2);border-radius:var(--rsm);
+             background:var(--vc);border:1px solid var(--gb2);border-radius:var(--rsm);
              display:flex;align-items:center;gap:10px">
           <span id="fileIcon" style="font-size:1.4rem"></span>
           <div style="flex:1;min-width:0">
